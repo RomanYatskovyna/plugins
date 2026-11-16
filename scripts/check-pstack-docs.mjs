@@ -13,9 +13,9 @@ const PSTACK = join(ROOT, "pstack");
 const GUIDE = "docs/guide";
 const SETUP = join(PSTACK, "skills", "setup-pstack", "SKILL.md");
 
-// Commands that ship with Cursor or Claude Code, not in this repository. Nothing here can verify them, so add a name
+// Commands that ship with Cursor, Claude Code, or Codex, not in this repository. Nothing here can verify them, so add a name
 // only after a public Cursor or Claude Code doc shows it.
-const EXTERNAL = new Set(["add-plugin", "autopilot", "create-skill", "in-cloud", "loop", "plugin"]);
+const EXTERNAL = new Set(["add-plugin", "autopilot", "create-skill", "in-cloud", "loop", "plugin", "simplify"]);
 const RENAMED = new Map([["babysit", "autopilot"]]);
 
 const SMALL = "zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen".split(" ");

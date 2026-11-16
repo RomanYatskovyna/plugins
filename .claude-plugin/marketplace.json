@@ -1,8 +1,7 @@
 {
-  "name": "cursor-plugins",
+  "name": "t3-plugins",
   "owner": {
-    "name": "Cursor",
-    "email": "plugins@cursor.com"
+    "name": "RomanYatskovyna"
   },
   "plugins": [
     {
@@ -12,8 +11,8 @@
     },
     {
       "name": "pstack",
-      "source": "./harness/pstack/claude-code",
-      "description": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence."
+      "source": "./pstack",
+      "description": "pstack for the T3 Code orchestrator. if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence."
     }
   ]
 }

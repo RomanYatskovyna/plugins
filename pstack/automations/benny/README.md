@@ -1,5 +1,7 @@
 # benny
 
+> This T3 Code fork has not ported benny. It still needs Cursor Automations and Cursor Slack actions, and the rest of pstack does not depend on it.
+
 benny gives you two cursor automations for slack issue reports. one triages each report. the other reproduces confirmed bugs and may prepare a small draft fix.
 
 the files in this directory are dormant setup and automation sources. they do not appear as slash skills.
