@@ -145,10 +145,10 @@ You rarely need more words. You need the right name, and [the principles page](.
 ## Get the reply in plain words
 
 ```text
-/bro
+/wait-what
 ```
 
-That's the whole prompt. [`/bro`](../../skills/bro/SKILL.md) restates the last message like one human talking to another, no jargon, shorter. Use it when a reply is technically thorough and you still don't know what it said.
+That's the whole prompt. [`/wait-what`](../../skills/wait-what/SKILL.md) restates the last message like one human talking to another, no jargon, shorter. Use it when a reply is technically thorough and you still don't know what it said.
 
 ## Catch up on a chat you left running
 

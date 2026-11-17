@@ -1,6 +1,6 @@
 ---
-name: bro
-description: Restate the last message in plain human language, with no jargon.
+name: wait-what
+description: Restate the last message in plain human language, with no jargon. Use for /wait-what or "wait what".
 disable-model-invocation: true
 ---
 

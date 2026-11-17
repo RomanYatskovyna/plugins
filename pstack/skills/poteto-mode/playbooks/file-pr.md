@@ -1,4 +1,4 @@
-### Opening a PR
+### File PR
 
 Invoked at the end of every other playbook.
 
@@ -29,6 +29,6 @@ After the sections, attach videos or screenshots when they prove a claim. Full S
 
 **Readiness.** Open every PR ready, never as a draft. With Origin, pass `--status open`. With `gh`, omit `--draft`. If a PR still opens as a draft, run `origin pr ready <number>` or `gh pr ready <number>` according to the resolved forge. Run `origin pr view <number>` or `gh pr view <number>` before you refer to PR status.
 
-**Babysit.** Opening a PR does not start a babysit. Post the URL and keep building. Finish the phase or stack first. Run a separate babysit pass only when the user asks for one after the whole stack exists. A babysit for each new PR stalls the build and spends checks on commits later waves restart. Push back when feedback drifts from intent.
+**Babysit.** File PR does not start a babysit. Post the URL and keep building. Finish the phase or stack first. Run a separate babysit pass only when the user asks for one after the whole stack exists. A babysit for each new PR stalls the build and spends checks on commits later waves restart. Push back when feedback drifts from intent.
 
-A subagent that opens a PR runs the slop-strip and `/no-comments`, then ends with `PR <url>, head <sha>, checks and reviews <state>`. It returns to the parent without babysitting or watching. An Autopilot-full or Autopilot-stack owner is the one exception to the babysit wait. Its brief assigns babysit rounds and is the ask `playbooks/babysit.md` waits for. The root watches the owner's PR, and each wake that needs work becomes the owner's next round. The owner reports merge-ready, and is exempt from the rules here and in `playbooks/babysit.md` that hold babysitting until a whole stack is built.
+A subagent that opens a PR runs the slop-strip and `/no-comments`, then ends with `PR <url>, head <sha>, checks and reviews <state>`. It returns to the parent without babysitting or watching. An Full send or Full stop owner is the one exception to the babysit wait. Its brief assigns babysit rounds and is the ask `playbooks/babysit-pr.md` waits for. The root watches the owner's PR, and each wake that needs work becomes the owner's next round. The owner reports merge-ready, and is exempt from the rules here and in `playbooks/babysit-pr.md` that hold babysitting until a whole stack is built.

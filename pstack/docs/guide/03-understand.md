@@ -62,9 +62,9 @@ Teaching helps the agent as much as you. An agent that has to explain its work m
 /recall my work on the virtualized list from yesterday, then read this bug report.
 ```
 
-If you want to resume one specific chat, that's the Session pickup playbook below, not `/recall`.
+If you want to resume one specific chat, that's the Takeover playbook below, not `/recall`.
 
-## Take over prior work with Session pickup
+## Take over prior work with Takeover
 
 When another agent (or you, last week) left a branch mid-flight:
 
@@ -72,7 +72,7 @@ When another agent (or you, last week) left a branch mid-flight:
 /poteto-mode take over this branch. read the decision log, figure out what's done, and continue from there. don't redo finished work.
 ```
 
-The [Session pickup playbook](../../skills/poteto-mode/playbooks/session-pickup.md) treats the prior trail as authoritative. It reconstructs the branch state and decisions, names the resume point, and verifies inherited claims against the original goal instead of re-deriving everything from scratch.
+The [Takeover playbook](../../skills/poteto-mode/playbooks/takeover.md) treats the prior trail as authoritative. It reconstructs the branch state and decisions, names the resume point, and verifies inherited claims against the original goal instead of re-deriving everything from scratch.
 
 **Pitfall:** don't skip this page's skills because "the agent will read the code anyway." An agent that starts editing without a traced model tends to fix the symptom at the first plausible spot. `/how` first is cheaper than the second bug.
 

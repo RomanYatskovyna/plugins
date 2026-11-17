@@ -46,7 +46,7 @@ Create `~/.pstack/` if needed, then write `~/.pstack/models.md` with the comment
 feature, refactoring: claude-opus-5-5-xhigh
 bug-fix: claude-opus-5-5-xhigh
 perf-issue: claude-opus-5-5-xhigh
-hillclimb: claude-opus-5-5-xhigh
+hill-climb: claude-opus-5-5-xhigh
 judgment and prose: claude-opus-5-5-xhigh
 hardest tasks: claude-fable-5-2-max
 reflect tooling: claude-opus-5-5-high-fast
