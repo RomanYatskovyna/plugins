@@ -15,7 +15,7 @@ Call `orchestrator_capabilities`. Skip every provider whose `canRunChildTask` is
 
 ### 2. Load current state
 
-The default role-to-model mapping is the file shape shown in step 5 below. If `~/.pstack/models.md` already exists, read it and treat its `# budget` line and its role values as the current choices. Otherwise start from those defaults. A line whose role is not in step 5, such as `how explorer` or `why investigators`, is from a retired role. Drop it. A value whose family no detected provider offers, such as a `gemini-*`, `grok-*`, or `cursor-*` slug copied from a Cursor setup, takes the role's step 5 default in a single-model role. In a panel list it becomes the list's step 5 entry at the same position, or `gpt-6.1-sol-high` when that position has none. Tell the user which values you replaced and which lines you dropped.
+The default role-to-model mapping is the file shape shown in step 5 below. If `~/.pstack/models.md` already exists, read it and treat its `# budget` line and its role values as the current choices. Otherwise start from those defaults. A line whose role is not in step 5, such as `how explorer` or `why investigators`, is from a retired role. Drop it. A value whose family no detected provider offers, such as a `gemini-*`, `grok-*`, or `cursor-*` slug copied from a Cursor setup, takes the role's step 5 default in a single-model role. In a panel list it becomes the list's step 5 entry at the same position, or `gpt-6.2-sol-high` when that position has none. Tell the user which values you replaced and which lines you dropped.
 
 ### 3. Budget, map, and confirm
 
@@ -51,11 +51,11 @@ judgment and prose: claude-opus-5-5-xhigh
 hardest tasks: claude-fable-5-2-max
 reflect tooling: claude-opus-5-5-high-fast
 reflect judgment, divergent, synthesizer: claude-opus-5-5-xhigh
-arena runners: claude-fable-5-2-high, claude-opus-5-5-high-fast, gpt-6.1-sol-high
-arena cross-judge pool: claude-fable-5-2-high, claude-opus-5-5-high-fast, gpt-6.1-sol-high
+arena runners: claude-fable-5-2-high, claude-opus-5-5-high-fast, gpt-6.2-sol-high
+arena cross-judge pool: claude-fable-5-2-high, claude-opus-5-5-high-fast, gpt-6.2-sol-high
 swarm workers: claude-opus-5-5-high-fast
-architect runners: claude-fable-5-2-high, claude-opus-5-5-high-fast, gpt-6.1-sol-high
-interrogate reviewers: claude-fable-5-2-high, claude-opus-5-5-high-fast, gpt-6.1-sol-high
+architect runners: claude-fable-5-2-high, claude-opus-5-5-high-fast, gpt-6.2-sol-high
+interrogate reviewers: claude-fable-5-2-high, claude-opus-5-5-high-fast, gpt-6.2-sol-high
 ```
 
 ### 6. Confirm
