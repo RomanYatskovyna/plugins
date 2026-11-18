@@ -57,6 +57,14 @@ A slug is rejected when `orchestrator_capabilities` does not list its model, eff
 
 A family is a slug prefix, and the longest match wins: `claude-fable-*`, `claude-*`, and `gpt-*`. Any other slug's family is its text before the first hyphen. A vendor groups families by company. `claude-fable-*` and `claude-*` are the Anthropic vendor, and `gpt-*` is the OpenAI vendor.
 
+### Usage limits
+
+A child that runs out of usage ends its run as failed. Its completion wakes you with the usual "reached a terminal state" message, which carries no reason. `task_status` then returns `status: "failed"`, and its `summary` is the provider's own error text, such as "You've hit your limit · resets 3pm", "Claude usage limit reached", or a Codex "usage limit" message with a "Try again at" time. The failure class stays inside the server, so read the limit from that text.
+
+The `fallbackModelSelection` setting applies only to new threads made in the app. `delegate_task` always runs its `target`.
+
+With `autoResumeLimitedThreads` on, T3 resumes a limited child on the same model once its limit resets, unless its parent thread is settled, archived, or deleted. Cancel a limited child with `task_cancel` before you replace it, or the old child comes back and repeats the work.
+
 ## Other tools
 
 | Need | T3 Code |
