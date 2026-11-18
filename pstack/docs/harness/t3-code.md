@@ -109,5 +109,5 @@ Raw provider transcripts also exist on disk, at `~/.claude/projects/<slug>/` for
 
 When a step needs one of these, put one line in your reply, `Skipped in T3 Code: <step>. <reason>.`, then go on. Do not stop, ask, or retry.
 
-- Cursor's built-in skills and plugins, such as `cursor-team-kit`. When a step names `/deslop`, run it if it is installed. Otherwise run Claude's `/simplify` if you have it, else skip with the line. When a step names `control-ui` or `control-cli`, use the project's own control skill if it has one, else the `preview_*` tools for a web UI or the shell for a CLI.
+- Cursor's built-in skills and plugins, such as `cursor-team-kit`. pstack bundles copies of four `cursor-team-kit` skills: `deslop`, `control-ui`, `control-cli`, and `verify-this`. When a step names `control-ui` or `control-cli`, use the project's own control skill if it has one. For a web UI, use the `preview_*` tools before `control-ui`.
 - Bugbot and security-review bots are GitHub apps, not editor features. Their comments are ordinary review threads, so triage them as the step says. Skip a step that starts or configures one when the PR has no such check or comment.

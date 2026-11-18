@@ -77,6 +77,9 @@ The default answer is `/poteto-mode`, which runs most of the others when its ste
 | Apply TypeScript rules to `.ts` or `.tsx` work | [`/typescript-best-practices`](../typescript-best-practices/SKILL.md) |
 | Strip comments before review, using a reviewer that didn't write them | [`/no-comments`](../no-comments/SKILL.md) |
 | Clean AI tells out of prose | [`/unslop`](../unslop/SKILL.md) |
+| Clean AI slop out of the branch's code | [`/deslop`](../deslop/SKILL.md) |
+| Drive a web, Electron, CLI, or TUI app with a local harness | [`/control-ui`](../control-ui/SKILL.md), [`/control-cli`](../control-cli/SKILL.md) |
+| Prove or disprove a claim with baseline and treatment evidence | [`/verify-this`](../verify-this/SKILL.md) |
 | Write docs, an RFC, a README, a PR description, or a commit message to a standard | [`/technical-writing`](../technical-writing/SKILL.md) |
 | Hear the last reply again in plain words | [`/wait-what`](../wait-what/SKILL.md) |
 | Give agents a scripted way to drive the app and prove behavior | [`/create-verification-skill`](../create-verification-skill/SKILL.md) |
@@ -107,7 +110,6 @@ Close calls:
 
 Not in pstack:
 
-- `/deslop`, `control-cli`, and `control-ui` ship in Cursor's `cursor-team-kit` plugin, which T3 Code does not have. pstack falls back to `/simplify`, the T3 `preview_*` and `device_*` tools, and the shell.
 - `/loop` is a Claude Code built-in. pstack's own wakes use T3's `schedule_task`, so they work on every provider.
 - `skill-creator` ships with Claude and Codex, not pstack.
 - pstack has no `/orchestrate` skill. Orchestrate is a `/poteto-mode` playbook. If the slash menu shows `/orchestrate`, another plugin provides it.

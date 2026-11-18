@@ -158,6 +158,9 @@ the full rules and playbooks live in [`skills/poteto-mode/SKILL.md`](./skills/po
 | [`/maintain-formal-verification-skill`](./skills/maintain-formal-verification-skill/SKILL.md) | code your formal verification covers has changed since it was last checked. updates the model, harness, or properties to match the code, reruns, and says whether each failure is drift in the verification or a bug in the code. |
 | [`/statechart`](./skills/statechart/SKILL.md) | someone who owns the behavior needs to see it, not read a spec. checks a tla+ model, draws what the user sees as a mermaid statechart, marks each state that breaks a rule, and gives the shortest path to each one. |
 | [`/unslop`](./skills/unslop/SKILL.md) | you're cleaning up writing. removes AI tells. |
+| [`/deslop`](./skills/deslop/SKILL.md) | you're cleaning up code. removes AI slop from the branch diff. copied from `cursor-team-kit`. |
+| [`/control-ui`](./skills/control-ui/SKILL.md) and [`/control-cli`](./skills/control-cli/SKILL.md) | you need a local harness to drive a web, electron, cli, or tui app. copied from `cursor-team-kit`. |
+| [`/verify-this`](./skills/verify-this/SKILL.md) | you want a claim proved or disproved with baseline and treatment evidence. copied from `cursor-team-kit`. |
 | [`/wait-what`](./skills/wait-what/SKILL.md) | you want the last message restated in plain human language, no jargon. |
 | [`/technical-writing`](./skills/technical-writing/SKILL.md) | layered doc standard (Diátaxis + Google developer style + STE + Global English) for docs, RFCs, readmes, PR descriptions, commit messages. |
 
@@ -260,7 +263,6 @@ twenty-four short skills, one principle each. `poteto-mode` indexes them inline 
 
 a few things `poteto-mode` references but doesn't bundle:
 
-- `/deslop`, `control-cli`, and `control-ui` ship in cursor's `cursor-team-kit`, which T3 Code does not have. pstack uses `/deslop` when it is installed, else `/simplify`, and drives apps with the project's own control skill, T3's `preview_*` and `device_*` tools, or the shell.
 - `skill-creator` ships with claude and codex. inside `poteto-mode`, pr-status requests go to the [babysit pr playbook](./skills/poteto-mode/playbooks/babysit-pr.md), not another babysit skill.
 
 ## why are there no planning skills?
