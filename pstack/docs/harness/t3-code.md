@@ -40,14 +40,14 @@ A skill that says to spawn a general-purpose subagent spawns one with no persona
 
 ### Slugs
 
-A slug is `<model>-<effort>`, with `-fast` added for fast speed. `<model>` is a model id that `orchestrator_capabilities` lists, such as `claude-opus-5-5` or `gpt-6.1-sol`. `<effort>` is one value of that model's effort option. Map a slug to `target` like this.
+A slug is `<model>-<effort>`, with `-fast` added for fast speed. `<model>` is a model id that `orchestrator_capabilities` lists, such as `claude-opus-5-5` or `gpt-6.2-sol`. `<effort>` is one value of that model's effort option. Map a slug to `target` like this.
 
 - `providerInstanceId` is the provider that lists the model.
 - `model` is the model id.
 - `options` sets the effort option to `<effort>`. The effort option is the one whose values are effort levels. Claude calls it `effort`, and Codex calls it `reasoningEffort`.
 - `-fast` sets `fastMode: true` on a model that has that option, or `serviceTier: "priority"` on a model that has that option. A model with neither has no fast slug.
 
-So `claude-opus-5-5-high-fast` is `{ providerInstanceId: "claudeAgent", model: "claude-opus-5-5", options: { effort: "high", fastMode: true } }`, and `gpt-6.1-sol-high` is `{ providerInstanceId: "codex", model: "gpt-6.1-sol", options: { reasoningEffort: "high" } }`.
+So `claude-opus-5-5-high-fast` is `{ providerInstanceId: "claudeAgent", model: "claude-opus-5-5", options: { effort: "high", fastMode: true } }`, and `gpt-6.2-sol-high` is `{ providerInstanceId: "codex", model: "gpt-6.2-sol", options: { reasoningEffort: "high" } }`.
 
 `inherit-parent` and `auto` mean your own model. Omit `target` for them.
 
